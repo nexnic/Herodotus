@@ -18,5 +18,8 @@
   },
   "lint-staged": {
     "*.js": "eslint --cache --fix"
+  },
+  "dependencies": {
+    "bootstrap": "^5.2.3"
   }
 }
