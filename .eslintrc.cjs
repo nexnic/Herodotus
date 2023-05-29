@@ -4,7 +4,6 @@ module.exports = {
     es2021: true,
   },
   extends: ["eslint:recommended", "prettier"],
-  plugins: ["prettier"], 
   overrides: [],
   parserOptions: {
     ecmaVersion: "latest",
@@ -13,4 +12,5 @@ module.exports = {
   rules: {
 	"prettier/prettier": ["error"]
   },
+  plugins: ["prettier"],
 };
