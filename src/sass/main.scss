@@ -1,32 +1,32 @@
-// SASS Import Fil 
-    // Abstracts 
-        // Function
-            @import './abstracts/function';
-        // Mixins 
-            @import './abstracts/mixins';
-        // Variables
-             @import './abstracts/variables';
-    // Base 
-        // Animations 
-            @import './base/animations';
-        // Base 
-            @import './base/base';
-        // Typography 
-            @import './base/typography';
-        // Utilities
-            @import './base/utilities';
-    // Components 
-        // Buttons 
-            @import './components/buttons';
-    // Page 
-        // Header 
-            @import './layout/header';
-        // Main 
-            @import './layout/main';
-        // Nav 
-            @import './layout/nav';
-    // Pages 
-        // Main 
-            @import './pages/home';
-    // Bootstrap 
-        @import "../../node_modules/bootstrap/scss/bootstrap.scss";
+// SASS Import Fil
+// Abstracts
+// Function
+@import "./abstracts/function";
+// Mixins
+@import "./abstracts/mixins";
+// Variables
+@import "./abstracts/variables";
+// Base
+// Animations
+@import "./base/animations";
+// Base
+@import "./base/base";
+// Typography
+@import "./base/typography";
+// Utilities
+@import "./base/utilities";
+// Components
+// Buttons
+@import "./components/buttons";
+// Page
+// Header
+@import "./layout/header";
+// Main
+@import "./layout/main";
+// Nav
+@import "./layout/nav";
+// Pages
+// Main
+@import "./pages/home";
+// Bootstrap
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
