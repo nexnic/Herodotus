@@ -11,10 +11,9 @@
  *
  * ```
  */
-export const load = (key) => {
+export const load = (Value) => {
 	try {
-		let value = localStorage.getItem(key);
-		return value;
+		return JSON.parse(localStorage.getItem(Value));
 	} catch {
 		return false;
 	}
