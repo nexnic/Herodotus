@@ -15,9 +15,9 @@
  *
  */
 
-export const save = (key) => {
+export const save = (key, array) => {
 	try {
-		localStorage.setItem(key);
+		localStorage.setItem(key, array);
 		return true;
 	} catch {
 		return false;
