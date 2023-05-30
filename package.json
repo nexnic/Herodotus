@@ -10,7 +10,11 @@
     "prepare": "husky install",
     "sass": "sass src/sass:public/css",
     "lint": "eslint src/**/*.js",
-    "lint-fix": "eslint src/**/*.js --cache --fix"
+    "lint-fix": "eslint src/**/*.js --cache --fix",
+    "test": "npm run test-e2e-cli",
+    "test-e2e": "cypress open",
+    "test-e2e-report": "cypress run --reporter mochawesome",
+    "test-e2e-cli": "cypress run"
   },
   "devDependencies": {
     "cypress": "^12.13.0",
@@ -23,11 +27,7 @@
     "lint-staged": "^13.2.2",
     "prettier": "2.8.8",
     "sass": "^1.62.1",
-    "vite": "^3.1.0",
-    "test": "npm run test-e2e-cli",
-    "test-e2e": "cypress open",
-    "test-e2e-report": "cypress run --reporter mochawesome",
-    "test-e2e-cli": "cypress run"
+    "vite": "^3.1.0"
   },
   "lint-staged": {
     "*.js": [
