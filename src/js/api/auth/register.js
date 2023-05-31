@@ -1,3 +1,5 @@
+import { save } from "../../storage/save";
+
 export async function registerUser(user) {
 	const response = await fetch(
 		"https://nf-api.onrender.com/api/v1/auction/auth/register",
@@ -9,8 +11,9 @@ export async function registerUser(user) {
 			body: JSON.stringify(user),
 		}
 	);
-
 	if (response.ok) {
-		console.log(await response.json());
+		let userData = await response.json();
+		save(userData);
+		location.reload();
 	}
 }
