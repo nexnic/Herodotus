@@ -20,12 +20,22 @@
 			id="nav--top"
 			class="navbar sticky-top navbar-light bg-primary p-3 justify-content-center"
 		></nav>
-		<nav id="nav-search" class="invisible">
-			<form action="">
-				<input type="search" />
-			</form>
+		<nav id="nav-search" class="d-none justify-content-center">
+			<div class="bg-primary w-50 p-3">
+				<div class="input-group mb-3">
+					<input type="search" class="form-control" />
+					<div class="input-group-append">
+						<button class="btn btn-primary" type="button">Button</button>
+					</div>
+				</div>
+			</div>
 		</nav>
-		<header></header>
+		<div id="tabContainer" class="d-none justify-content-center">
+			<div class="bg-primary w-50 p-3">
+				<button type="button" class="btn btn-primary">test</button>
+			</div>
+		</div>
+		<header>test test</header>
 		<main></main>
 		<nav
 			id="nav-bot"
@@ -181,6 +191,8 @@
 				</div>
 			</div>
 		</div>
+		<!-- Modal Add Item -->
+
 		<script
 			src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
 			integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
