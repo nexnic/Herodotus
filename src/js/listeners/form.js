@@ -7,17 +7,17 @@ import { loginapi } from "../api/auth/loginapi";
 import { validMail } from "../tools/validator";
 import { ValidPWD } from "../tools/validator";
 
-export const formListener = (e) => {
-	const event = e;
-	console.log(event);
+export const formListener = (event) => {
+	const target = event;
+	console.log(target);
 	// Login
 	document
 		.querySelector("form#form-login")
-		.addEventListener("submit", (event) => {
+		.addEventListener("submit", (target) => {
 			// Stop refreas
-			event.preventDefault();
+			target.preventDefault();
 
-			const form = event.target;
+			const form = target.target;
 			const formFields = form.elements;
 			const email = formFields[0].value;
 			const _pwd = formFields[1].value;
@@ -33,8 +33,4 @@ export const formListener = (e) => {
 				loginapi(jsonData);
 			}
 		});
-
-	document.querySelector("#btn-profile").addEventListener("click", () => {
-		console.log("click");
-	});
 };
