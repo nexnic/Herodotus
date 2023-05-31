@@ -5,8 +5,7 @@ export const listenersbtn = (e) => {
 	const event = e;
 	console.log(event);
 	document.querySelector("#btn-profile")?.addEventListener("click", () => {});
-	document.querySelector("#btn--logout")?.addEventListener("click", (event) => {
-		event.preventDefault();
+	document.querySelector("#btn--logout")?.addEventListener("click", () => {
 		cleanall();
 		location.reload();
 	});
@@ -14,11 +13,10 @@ export const listenersbtn = (e) => {
 		console.log("click");
 	});
 
-	document.querySelector("#btn--home").addEventListener("click", () => {
-		console.log("click");
-	});
+	document.querySelector("#btn--home").addEventListener("click", () => {});
 	document.querySelector("#btn--search").addEventListener("click", () => {
-		console.log("click");
+		document.querySelector("#nav-search").classList.toggle("invisible");
+		document.querySelector("#nav-search").classList.toggle("visible");
 	});
 	document.querySelector("#btn-add").addEventListener("click", () => {
 		console.log("click");
