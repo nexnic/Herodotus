@@ -12,10 +12,5 @@
  */
 
 export const cleanall = () => {
-	try {
-		localStorage.clear;
-		return true;
-	} catch {
-		return false;
-	}
+	localStorage.clear();
 };
