@@ -15,14 +15,15 @@ export const listenersbtn = (e) => {
 
 	document.querySelector("#btn--home").addEventListener("click", () => {});
 	document.querySelector("#btn--search").addEventListener("click", () => {
-		document.querySelector("#nav-search").classList.toggle("invisible");
-		document.querySelector("#nav-search").classList.toggle("visible");
+		document.querySelector("#nav-search").classList.toggle("d-none");
+		document.querySelector("#nav-search").classList.toggle("d-flex");
 	});
 	document.querySelector("#btn-add").addEventListener("click", () => {
 		console.log("click");
 	});
 	document.querySelector("#btn--filter").addEventListener("click", () => {
-		console.log("click");
+		document.querySelector("#tabContainer").classList.toggle("d-none");
+		document.querySelector("#tabContainer").classList.toggle("d-flex");
 	});
 	document.querySelector("#btn-users").addEventListener("click", () => {
 		console.log("click");
