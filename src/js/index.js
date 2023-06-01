@@ -1,10 +1,9 @@
-import { templetNav } from "./templet/nav/nav";
-import { templetHeaderHome } from "./templet/home/header";
 import listeners from "./listeners/index";
+import { GetAllListings } from "./api/listings/allListings";
 
-templetNav();
-templetHeaderHome();
 import ui from "./ui/index.js";
 
 ui();
 listeners();
+
+GetAllListings();
