@@ -1,0 +1,26 @@
+// Primary Color
+$primaryColor: #211733;
+$secondaryColor: #7b56bf;
+
+// Gray Color
+// Gray Color - Light
+$grayColor-light: #f7f7f7;
+// Gray Color
+$grayColor: #dedede;
+// Gray Color - Dark
+$grayColor-dark: #b8b8b8;
+// White Color
+// White Color
+$whiteColor: #f1f1f1;
+
+// Theme Color
+$theme-colors: (
+	primary: $primaryColor,
+);
+
+// Body Background color
+$body-bg: $grayColor;
+
+i {
+	color: #f1f1f1;
+}
