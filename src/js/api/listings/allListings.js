@@ -1,4 +1,5 @@
 import { save } from "../../storage/save";
+import { render } from "../../templet/render/render";
 export async function GetAllListings() {
 	try {
 		const response = await fetch(
@@ -13,6 +14,7 @@ export async function GetAllListings() {
 		if (response.ok) {
 			const data = await response.json();
 			save("listings", data);
+			render(data, "main", "listingCard");
 		}
 	} catch (error) {
 		console.log(error);
